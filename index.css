@@ -1,0 +1,233 @@
+body {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    background: #F5F6F8;
+    font-family: 'Poppins', sans-serif;
+}
+.logo {
+    position: absolute;
+    width: 139px;
+    height: 26px;
+    left: 24px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    color: #109CF1;
+    z-index: 1;
+}
+
+.top-divider {
+    position: absolute;
+    height: 1px;
+    left: 0px;
+    right: 0px;
+    top: 60px;
+
+    background: #EBEFF2;
+}
+
+.sidenav {
+    position: absolute;
+    width: 256px;
+    left: 0px;
+    top: 0px;
+    bottom: 0px;
+    background-color: white;
+
+    box-shadow: 6px 0px 18px rgba(0, 0, 0, 0.06);
+}
+
+.sidenav .navs {
+    position: absolute;
+    /* width: 174px; */
+    /* height: 20px; */
+    left: 22px;
+    top: 167px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+
+.menu-item {
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 19px;    
+    letter-spacing: 0.01em;
+    color: #334D6E;
+    margin-bottom: 20px;
+
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.menu-item svg {
+    margin-right: 14px;  
+}
+
+.top-nav {
+    height: 60px;
+    background-color: white;
+}
+
+.profile {
+    position: absolute;
+    width: 208px;
+    height: 46px;
+    left: 24px;
+    top: 85px;
+
+    z-index: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.profile .user-photo {
+    width: 46px;
+    height: 46px;
+}
+
+.profile div {
+    display: flex;
+    flex-direction: column;
+    margin-left: 16px;
+}
+
+.profile .username {
+    /* position: absolute; */
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    margin-bottom: 2px;
+    margin: 0;
+
+
+    color: #192A3E;
+}
+
+.profile .user-email {
+    /* position: absolute; */
+
+    margin: 0;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 16px;
+    
+    letter-spacing: 0.01em;
+
+    
+    color: #90A0B7;
+}
+
+.setting-div {
+    position: absolute;
+    width: 256px;
+    height: 1px;
+    left: 0px;
+    top: 415px;
+
+    /* divider */
+
+    background: #EBEFF2;
+}
+
+.settings {
+    position: fixed;
+    left: 24px;
+    top: 440px
+}
+
+/* dash components */
+
+.calendar {
+    position: absolute;
+    height: 718px;
+    left: 292px;
+    right: 513px;
+    top: 96px;
+
+    /* white */
+
+    background: #FFFFFF;
+    /* box shadow */
+
+    box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.06);
+    border-radius: 4px;
+}
+
+.task-progress {
+    position: absolute;
+    left: 24px;
+    /* top: 16px; */
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 19px;
+    /* identical to box height */
+    
+    letter-spacing: 0.01em;
+
+    color: #334D6E;
+}
+
+.cal-divider {
+    position: absolute;
+    left: 24px;
+    right: 24px;
+    top: 52px;
+
+    /* divider */
+
+    background: #EBEFF2;
+    border-radius: 3px;
+}
+
+.cal-progress {
+    height: 4px;
+    width: 42%;
+    background: #2ED47A;
+}
+
+.cal-date {
+    position: absolute;
+    left: 24px;
+    top: 76px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+    /* identical to box height */
+
+    letter-spacing: 0.01em;
+
+    color: #192A3E;
+}
+
+.dates {
+    margin-left: 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.dates .day {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.task-div {
+    width: 100%;
+}
