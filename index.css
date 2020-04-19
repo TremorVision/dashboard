@@ -656,7 +656,7 @@ body {
 }
 
 #sig-canvas {
-    background-image: url(/imgs/Spiral_image.jpg);
+    background-image: url(imgs/Spiral_image.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
     border: 1px solid black;
