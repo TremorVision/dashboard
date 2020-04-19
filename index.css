@@ -150,6 +150,8 @@ body {
 
 /* dash components */
 
+
+/* calendar */
 .calendar {
     position: absolute;
     height: 718px;
@@ -169,7 +171,6 @@ body {
 .task-progress {
     position: absolute;
     left: 24px;
-    /* top: 16px; */
     font-style: normal;
     font-weight: 500;
     font-size: 13px;
@@ -179,6 +180,9 @@ body {
     letter-spacing: 0.01em;
 
     color: #334D6E;
+
+    margin-top: 16px;
+    margin-bottom: 16px;
 }
 
 .cal-divider {
@@ -281,12 +285,7 @@ body {
 
 .task {
     height: 126px;
-
-    
-    /* white */
-    
     background: #FFFFFF;
-    /* card shadow */
     
     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.08);
     border-radius: 4px;
@@ -378,4 +377,185 @@ body {
 
     /* white */
     color: #FFFFFF;
+}
+
+.older {
+    position: absolute;
+    bottom: 24px;
+    width:100%;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 19px;
+    /* identical to box height */
+
+    text-align: center;
+    letter-spacing: 0.01em;
+
+    /* Accent blue */
+
+    color: #109CF1;
+}
+
+/* -------------= end of calendar =------------ */
+
+/* ======================- daily msg -===================================*/
+
+.daily-msg {
+    position: absolute;
+    width: 445px;
+    height: 344px;
+    right: 36px;
+    top: 96px;
+
+    background: white;
+    box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.06);
+    border-radius: 4px;
+}
+
+.daily-header {
+    margin: 24px 24px 16px 24px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.daily-header p {
+    margin: 0;
+    font-size: 15px;
+    line-height: 22px;
+    font-weight: 500;
+    /* identical to box height */
+
+    letter-spacing: 0.01em;
+
+    /* black */
+
+    color: #192A3E;
+}
+
+.daily-header div {
+    font-size: 12px;
+    line-height: 18px;
+    /* identical to box height */
+    letter-spacing: 0.01em;
+    color: #109CF1;
+}
+
+.type {
+    color: #6A707E;
+}
+
+.daily-div {
+    height: 1px;
+    background: #EBEFF2;
+}
+
+.daily-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    align-items: center;
+    margin:24px 24px 0 24px;
+}
+
+.circle {
+    position: relative;
+    width: 164px;
+    height: 164px;
+    /* left: 28px;
+    top: 80px; */
+
+    border: 8px solid #2ED47A;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.daily-result {
+
+    font-weight: 500;
+    font-size: 56px;
+    line-height: 84px;
+    text-align: center;
+    
+    /* green */
+    
+    color: #2ED47A;
+}
+
+.daily-content p {
+    margin: 0;
+    width: 50%;
+}
+
+.daily-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 9px 24px 24px 24px;
+
+}
+
+.description {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.sm-circ {
+    width: 8px;
+    height: 8px;
+    border: 2px solid #2ED47A;
+    box-sizing: border-box;
+    border-radius: 50%;
+}
+
+.desc {
+    font-size: 10px;
+    line-height: 15px;
+    letter-spacing: 0.01em;
+    color: #192A3E;
+    margin: 0 0 0 8px;
+}
+
+.start-test {
+    height: 45px;
+    width: 122px;
+    background: #FFB946;
+    border-radius: 4px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+
+    font-size: 11px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.02em;
+}
+/* end of daily msg */
+
+/* **************************chart progress chart******************************* */
+
+.progress-data {
+    position: absolute;
+
+    width: 445px;
+    height: 344px;
+    right: 35px;
+    top: 470px;
+
+    background: white;
+    box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.06);
+    border-radius: 4px;
+}
+
+.chart {
+    margin-top:16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
