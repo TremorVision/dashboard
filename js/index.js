@@ -21,7 +21,8 @@ window.onclick = function (event) {
 }
 
 
-// canvas
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~|canvas| ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 var canvas = document.getElementById("sig-canvas");
 var ctx = canvas.getContext("2d");
 ctx.strokeStyle = "#222222";
@@ -153,6 +154,10 @@ document.getElementById('retry').addEventListener('click', function(e) {
     document.getElementById('finish').style.display = 'none';
 }, false)
 
+document.getElementById('finish').addEventListener('click', function(e) {
+    modal.style.display = 'none';
+})
+
 
 // make blob
 
@@ -198,15 +203,14 @@ function callModel(img) {
             return response.json();
         })
         .then(function (data) {
-            handleFetch(data, img);
+            populateResult(data, img);
         })
         .catch(function (error) {
             console.log('err');
         });
 }
 
-function handleFetch(data, img) {
-    
+function populateResult(data, img) {
     let parkisonsPercentage;
     let healthyPercentage;
     if (data.predictions[0].tagName === 'parkinson') {
@@ -235,6 +239,11 @@ function handleFetch(data, img) {
     desc.innerHTML = 'These results will be logged and sent to your doctor you may try again. Otherwise you may download your spiral or share directly with your Doctor.';
     desc.classList.add('res-desc');
     parent.appendChild(desc);
+
+    // let down = document.createElement('div');
+    // down.innerHTML = 'Download';
+    // down.classList.add('dl-spiral');
+    // parent.appendChild(down);
     
     let smallImg = document.createElement('img');
     smallImg.src = img;

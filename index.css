@@ -689,6 +689,7 @@ body {
 
 .clear {
     background: #0D0CEB;
+    cursor: pointer;
 }
 .clear:hover {
     background: rgb(7, 7, 177);
@@ -697,6 +698,7 @@ body {
 .eval, .retry {
     background-color: #FFB946;
     margin-left: 20px;
+    cursor: pointer;
 }
 
 .eval:hover, .retry:hover {
@@ -746,4 +748,15 @@ body {
     height: 272px;
     width: 306px;
     margin-bottom: 43px;
+}
+
+.dl-spiral {
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 19px;
+    letter-spacing: 0.01em;
+
+    /* Accent blue */
+
+    color: #109CF1;
 }
