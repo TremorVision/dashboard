@@ -535,6 +535,11 @@ body {
     line-height: 16px;
     text-align: center;
     letter-spacing: 0.02em;
+    text-decoration: none;
+}
+
+.start-test:hover {
+    background: #CC8613;
 }
 /* end of daily msg */
 
@@ -558,4 +563,174 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+
+/* end of chart */
+
+
+/* modal view 1*/
+
+.popup {
+    position: fixed; 
+    padding-top: 100px; /* Location of the box */
+
+    /* display: none; */
+
+    z-index: 1;
+
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.25); /* Black w/ opacity */
+    transition: all 0.3s;
+
+
+}
+
+.mod-content {
+    width: 650px;
+    height: 623px;
+    background: #FFFFFF;
+    border-radius: 4px;
+    padding: 20px;
+    /* position: absolute; */
+    margin: auto;
+}
+
+.mod-header {
+    text-align: center;
+}
+
+
+.mod-title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    /* identical to box height */
+
+    letter-spacing: 0.01em;
+
+    /* black */
+    color: #192A3E;
+}
+
+.exit {
+    float:right;
+}
+
+.modal-div {
+    height: 1px;
+    background: #EBEFF2;
+    margin-left: -20px;
+    margin-right: -20px;
+    margin-top: 20px;
+}
+
+.spiral-desc {
+    text-align: center;
+    font-size: 13px;
+    line-height: 19px;
+    /* identical to box height */
+    letter-spacing: 0.01em;
+    /* dark_gray text */
+    color: #4C5862;
+    padding: 22px;
+}
+
+#sig-canvas {
+    background-image: url(/imgs/Spiral_image.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border: 1px solid black;
+    margin: auto;
+    display: block;
+}
+
+
+
+.clear, .eval, .retry {
+    border-radius: 4px;
+    width: 115px;
+    height:45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-decoration: none;
+    font-size: 11px;
+    line-height: 16px;
+/* identical to box height */
+
+    text-align: center;
+    letter-spacing: 0.02em;
+
+/* white */
+
+    color: #FFFFFF;
+}
+
+.clear {
+    background: #0D0CEB;
+}
+.clear:hover {
+    background: rgb(7, 7, 177);
+}
+
+.eval, .retry {
+    background-color: #FFB946;
+    margin-left: 20px;
+}
+
+.eval:hover, .retry:hover {
+    background-color: #CC8613;
+}
+
+
+.mod-btns {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+.result {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.01em;
+    color: #323C47;
+
+    margin-top: 50px;
+
+    margin-left: 70px;
+    margin-right: 70px;
+}
+
+.res-desc {
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0.01em;
+    color: #4C5862;
+
+    margin-top: 20px;
+    margin-left: 70px;
+    margin-right: 70px;
+    margin-bottom: 20px;
+}
+
+.res-img {
+    border: 1px solid black;
+    margin: auto;
+    display: block;
+
+    height: 272px;
+    width: 306px;
+    margin-bottom: 43px;
 }
