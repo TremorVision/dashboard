@@ -8,6 +8,12 @@ button.addEventListener('click', function (event) {
     modal.style.display = 'block';
 });
 
+let close = document.getElementById('exit');
+
+close.addEventListener('click', function() {
+    modal.style.display = 'none';
+});
+
 window.onclick = function (event) {
     if (event.target == modal) {
         modal.style.display = "none";
@@ -138,7 +144,7 @@ document.getElementById('clear').addEventListener("click", function (e) {
 
 document.getElementById('retry').addEventListener('click', function(e) {
     document.getElementById('spiral-cont').style.display = 'block';
-    document.getElementById('spiral-res').style.display = 'none';
+    document.getElementById('spiral-res').innerHTML = '';
 
     document.getElementById('upload').style.display = 'flex';
     document.getElementById('clear').style.display = 'flex';

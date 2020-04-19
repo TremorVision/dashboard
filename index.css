@@ -575,7 +575,7 @@ body {
     position: fixed; 
     padding-top: 100px; /* Location of the box */
 
-    /* display: none; */
+    display: none;
 
     z-index: 1;
 
@@ -622,6 +622,19 @@ body {
 .exit {
     float:right;
 }
+
+.exit:hover {
+    cursor: pointer;
+}
+
+.exit path {
+    fill: #C2CFE0;
+}
+
+.exit path:hover {
+    fill: rgb(98, 104, 112);
+}
+
 
 .modal-div {
     height: 1px;
