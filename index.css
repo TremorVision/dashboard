@@ -68,6 +68,11 @@ body {
     align-items: center;
 }
 
+.active {
+    color: #109CF1;
+    stroke: #109CF1 !important;
+}
+
 .menu-item svg {
     margin-right: 14px;  
 }
@@ -592,8 +597,8 @@ body {
 }
 
 .mod-content {
-    width: 650px;
-    height: 623px;
+    width: 575px;
+    height: 575px;
     background: #FFFFFF;
     border-radius: 4px;
     padding: 20px;
@@ -745,9 +750,9 @@ body {
     margin: auto;
     display: block;
 
-    height: 272px;
-    width: 306px;
-    margin-bottom: 43px;
+    height: 220px;
+    width: 220px;
+    margin-bottom: 50px;
 }
 
 .dl-spiral {

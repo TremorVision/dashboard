@@ -132,6 +132,7 @@ document.body.addEventListener("touchmove", function (e) {
 // end of canvas
 
 document.getElementById('upload').addEventListener("click", function (e) {
+    document.getElementById('spiral-res').innerHTML = '';
     var img = canvas.toDataURL("image/png");
     // getAPIFile(img);
     callModel(img);
@@ -156,6 +157,8 @@ document.getElementById('retry').addEventListener('click', function(e) {
 
 document.getElementById('finish').addEventListener('click', function(e) {
     modal.style.display = 'none';
+    // save the data
+
 })
 
 
@@ -222,9 +225,9 @@ function populateResult(data, img) {
     }
     let text = ''
     if (healthyPercentage <= parkisonsPercentage) {
-        text = `Our model shows that your spiral is ${(parkisonsPercentage * 100).toFixed(1)}% similar to known Parkinson's spirals!`;
+        text = `Our model shows that your spiral is ${(parkisonsPercentage * 100).toFixed(1)}% similar to known Parkinson's spirals.`;
     } else {
-        text = `Our model shows that your spiral is ${(healthyPercentage * 100).toFixed(1)}% similar to known healthy spirals!`;
+        text = `Our model shows that your spiral is ${(healthyPercentage * 100).toFixed(1)}% similar to known healthy spirals.`;
     }
 
     document.getElementById('spiral-cont').style.display = 'none';
