@@ -145,6 +145,21 @@ document.getElementById('clear').addEventListener("click", function (e) {
 }, false);
 
 document.getElementById('retry').addEventListener('click', function(e) {
+    resetModal();
+}, false)
+
+document.getElementById('finish').addEventListener('click', function(e) {
+    resetModal();
+    modal.style.display = 'none';
+    ctx.setTransform(1, 0, 0, 1, 0, 0);
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    ctx.beginPath();
+
+    // save the data to database, and populate database
+
+})
+
+function resetModal() {
     document.getElementById('spiral-cont').style.display = 'block';
     document.getElementById('spiral-res').innerHTML = '';
 
@@ -153,13 +168,7 @@ document.getElementById('retry').addEventListener('click', function(e) {
     // show new buttons
     document.getElementById('retry').style.display = 'none';
     document.getElementById('finish').style.display = 'none';
-}, false)
-
-document.getElementById('finish').addEventListener('click', function(e) {
-    modal.style.display = 'none';
-    // save the data
-
-})
+}
 
 
 // make blob
