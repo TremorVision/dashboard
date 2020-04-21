@@ -27,6 +27,7 @@ var canvas = document.getElementById("sig-canvas");
 var ctx = canvas.getContext("2d");
 ctx.strokeStyle = "#222222";
 ctx.lineWidth = 5;
+ctx.linejoin = "round";
 
 // Set up mouse events for drawing
 var drawing = false;
@@ -67,8 +68,10 @@ window.requestAnimFrame = (function (callback) {
 // Draw to the canvas
 function renderCanvas() {
     if (drawing) {
+        ctx.beginPath();
         ctx.moveTo(lastPos.x, lastPos.y);
         ctx.lineTo(mousePos.x, mousePos.y);
+        ctx.closePath(); // new
         ctx.stroke();
         lastPos = mousePos;
     }
@@ -128,6 +131,7 @@ document.body.addEventListener("touchmove", function (e) {
         e.preventDefault();
     }
 }, false);
+//mobile end
 
 // end of canvas
 
